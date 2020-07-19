@@ -1,0 +1,58 @@
+@use '_variables' as *;
+
+.jumbotron-hidden {
+  padding-top: 0px !important;
+  transition: padding $transition-duration ease-out;
+}
+
+.jumbotron {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: $gap-md;
+  background: url('../assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet){
+    padding: $gap-lg;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,74,117,0.5);
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    z-index: 0;
+
+    @media (min-width: $tablet){
+      left: $gap-lg;
+      top: $gap-lg;
+    }
+  }
+
+  &__content {
+    padding: 6rem 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+
+    >button {
+      margin-top: 1.5rem;
+    }
+
+    >span:nth-child(3) {
+      margin-top: 0.5rem;
+    }
+  }
+}

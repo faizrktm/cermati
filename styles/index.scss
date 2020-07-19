@@ -1,0 +1,80 @@
+@use '_default';
+@use '_variables' as *;
+@use 'newsletter';
+@use 'highlight';
+@use 'jumbotron';
+@use 'notification';
+
+.btn {
+  padding: $gap-sm $gap-md;
+  border-radius: 2px;
+  color: white;
+  transition: background-color 0.2s ease;
+
+  &-jumbotron {
+    text-transform: uppercase;
+    padding: $gap-md $gap-lg;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 2px;
+    font-weight: 500;
+    &:hover {
+      background-color: white;
+      color: #004a75;
+    }
+  }
+
+  &-blue {
+    background-color: #007bc1;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &-orange {
+    background-color: #ff8000;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.text {
+  line-height: 1.5em;
+
+  &-xlg {
+    font-size: 2rem;
+  }
+
+  &-lg {
+    font-size: 1.5rem;
+  }
+
+  &-md {
+    font-size: 1rem;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-500 {
+    font-weight: 500;
+  }
+
+  &-bold {
+    font-weight: bold;
+  }
+
+  &-white {
+    color: white;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $gap-lg;
+  background-color: #004a75;
+}

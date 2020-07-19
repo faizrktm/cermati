@@ -1,0 +1,62 @@
+@use '_variables' as *;
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  max-width: 640px;
+  background-color: rgba(0,123,193, 0.8);
+  padding: $gap-md;
+  transition: transform $transition-duration;
+
+  &__hidden {
+    transform: translateY(500px);
+  }
+
+  &__shown {
+    transform: translateY(0px);
+  }
+
+  @media (min-width: $tablet){
+    padding: $gap-lg;
+  }
+
+  &__close {
+    position: absolute;
+    top: $gap-sm;
+    right: $gap-sm;
+    cursor: pointer;
+    color: white;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: $gap-md;
+
+    >.btn {
+      margin-top: $gap-md;
+    }
+
+    @media (min-width: $tablet){
+      flex-direction: row;
+      >.btn {
+        margin-top: 0;
+        margin-left: $gap-md;
+        font-weight: bold;
+      }
+    }
+
+    &__control {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: $gap-sm $gap-md;
+
+      @media (min-width: $tablet){
+        flex: 1;
+      }
+    }
+  }
+}

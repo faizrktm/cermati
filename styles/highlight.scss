@@ -1,0 +1,61 @@
+@use '_variables' as *;
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem $gap-md;
+  background-color: #e5e5e5;
+
+  @media (min-width: $tablet){
+    padding: 4rem $gap-lg;
+  }
+
+  &__header {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+    align-self: center;
+
+    @media (min-width: $tablet){
+      max-width: 60%;
+    }
+
+    @media (min-width: $desktop){
+      max-width: 50%;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: $gap-md;
+
+    &__card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: $gap-lg $gap-md;
+      border: 1px solid #ccc;
+
+      &__icon {
+        font-size: 2rem;
+        color: #ccc;
+        position: absolute;
+        top: $gap-md;
+        right: $gap-md;
+      }
+    }
+
+    @media (min-width: $tablet){
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $desktop){
+      justify-content: space-between;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@use '_variables' as *;
+
+.notification {
+  width: 100%;
+  padding: $gap-md;
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: fixed;
+  transition: transform $transition-duration ease-out;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: $notification-max-width;
+
+    > span {
+      line-height: 1.5em;
+      margin-bottom: $gap-sm;
+
+      @media (min-width: $tablet){
+        line-height: 1.25em;
+        margin-bottom: 0;
+        margin-right: $gap-md;
+      }
+    }
+
+    @media (min-width: $tablet){
+      flex-direction: row;
+    }
+  }
+}
