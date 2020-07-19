@@ -1,5 +1,7 @@
 # Cermati Assesment Landing Page
 
+Demo: https://cermati-landing.herokuapp.com
+
 ## Styling
 Styling using sass compiled into css stored on `/styles` folder.
 
