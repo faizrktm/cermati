@@ -14,3 +14,5 @@ All images and icons is stored inside `/assets` folder
 
 ## Weird stuff
 If you see on `*.scss` files for `background-color` property is defined raw and not from variable. It is because I found it for only background-color property, variable is not compiled properly.
+
+Kindly ignore `index.php` as it is only to make deployment on heroku works.
