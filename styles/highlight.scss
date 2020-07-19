@@ -1,6 +1,7 @@
 @use '_variables' as *;
 
 .highlight {
+  flex: 1;
   display: flex;
   flex-direction: column;
   padding: 4rem $gap-md;
@@ -32,6 +33,9 @@
     display: grid;
     grid-template-columns: auto;
     grid-gap: $gap-md;
+    max-width: $maximum-content-width;
+    margin-left: auto;
+    margin-right: auto;
 
     &__card {
       position: relative;

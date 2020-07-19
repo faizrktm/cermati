@@ -8,7 +8,7 @@
   left: 0;
   max-width: 640px;
   background-color: rgba(0,123,193, 0.8);
-  padding: $gap-md;
+  padding: $gap-lg $gap-md $gap-md $gap-md;
   transition: transform $transition-duration;
 
   &__hidden {

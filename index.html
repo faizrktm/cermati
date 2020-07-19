@@ -8,84 +8,86 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <div id="notification" class="notification">
-    <div class="notification__content">
-      <span class="text">
-        By accessing and using this website, you acknowledge that you have read and<br />understand our <a href="#">Cookie Policy</a>, <a href="#">Privacy Policy</a>, and our <a href="#">Terms of Service</a>.
+  <main>
+    <div id="notification" class="notification">
+      <div class="notification__content">
+        <span class="text">
+          By accessing and using this website, you acknowledge that you have read and<br />understand our <a href="#">Cookie Policy</a>, <a href="#">Privacy Policy</a>, and our <a href="#">Terms of Service</a>.
+        </span>
+        <button class="btn btn-blue" id="notification__btn">
+          Got it
+        </button>
+      </div>
+    </div>
+    <div id="jumbotron">
+      <div class="jumbotron">
+        <img src="./assets/logo.png" class="jumbotron__icon" />
+        <div class="jumbotron__content">
+          <span class="text text-xlg text-white text-center">Hello! I'm Faiz Azmi</span>
+          <span class="text text-lg text-white text-500 text-center">Consult, Design, and Develop Websites</span>
+          <span class="text text-md text-center text-white">Have something great in mind? Feel free to contact me.</span>
+          <span class="text text-md text-center text-white">I'll help you to make it happen.</span>
+          <button class="btn btn-jumbotron mg-top-md">Let's Make Contact</button>
+        </div>
+      </div>
+    </div>
+    <div class="highlight">
+      <div class="highlight__header">
+        <span class="text text-xlg text-center">How Can I Help You?</span>
+        <span class="text text-md text-center">
+          Our work then targeted, best practices outcomes social innovation synergy. Venture philanthropy, revolutionary inclusive policymaker relief. User-centered program areas scale.
+        </span>
+      </div>
+      <div class="highlight__content">
+        <div class="highlight__content__card">
+          <i class="highlight__content__card__icon fa fa-comments-o" aria-hidden="true"></i>
+          <span class="text text-lg">Consult</span>
+          <span class="text text-md">Co-create, design thinking; strengthen infrastructure resist granular. Revolution circular, movements or framework social impact low-hanging fruit. Save the world compelling revolutionary progress.</span>
+        </div>
+        <div class="highlight__content__card">
+          <i class="highlight__content__card__icon fa fa-paint-brush" aria-hidden="true"></i>
+          <span class="text text-lg">Design</span>
+          <span class="text text-md">Policymaker collaborates collective impact humanitarian shared value vocabulary inspire issue outcomes agile. Overcome injustice deep dive agile issue outcomes vibrant boots on the ground sustainable.</span>
+        </div>
+        <div class="highlight__content__card">
+          <i class="highlight__content__card__icon fa fa-linode" aria-hidden="true"></i>
+          <span class="text text-lg">Develop</span>
+          <span class="text text-md">Revolutionary circular, movements a or impact framework social impact low-hanging. Save the compelling revolutionary inspire progress. Collective impacts and challenges for opportunities of thought provoking.</span>
+        </div>
+        <div class="highlight__content__card">
+          <i class="highlight__content__card__icon fa fa-bullhorn" aria-hidden="true"></i>
+          <span class="text text-lg">Marketing</span>
+          <span class="text text-md">Peaceful; vibrant paradigm, collaborative cities. Shared vocabulary agile, replicable, effective altruism youth. Mobilize commitment to overcome injustice resilient, uplift social transparent effective.</span>
+        </div>
+        <div class="highlight__content__card">
+          <i class="highlight__content__card__icon fa fa-server" aria-hidden="true"></i>
+          <span class="text text-lg">Manage</span>
+          <span class="text text-md">Change-makers innovation or shared unit of analysis. Overcome injustice outcomes strategize vibrant boots on the ground sustainable. Optimism, effective altruism invest optimism corporate social.</span>
+        </div>
+        <div class="highlight__content__card">
+          <i class="highlight__content__card__icon fa fa-line-chart" aria-hidden="true"></i>
+          <span class="text text-lg">Evolve</span>
+          <span class="text text-md">Activate catalyze and impact contextualize humanitarian. Unit of analysis overcome injustice storytelling altruism. Thought leadership mass incarceration. Outcomes big data, fairness, social game-changer.</span>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="text text-md text-center text-white">&copy; 2020 Faiz Azmi Rekatama. All rights reserved.</span>
+    </footer>
+    <div class="newsletter newsletter__hidden" id="newsletter">
+      <button id="newsletter__close" class="newsletter__close"><i class="fa fa-times" aria-hidden="true"></i></button>
+      <span class="text text-lg text-bold text-white">
+        Get latest updates in web technologies
       </span>
-      <button class="btn btn-blue" id="notification__btn">
-        Got it
-      </button>
-    </div>
-  </div>
-  <div id="jumbotron">
-    <div class="jumbotron">
-      <img src="./assets/logo.png" class="jumbotron__icon" />
-      <div class="jumbotron__content">
-        <span class="text text-xlg text-white text-center">Hello! I'm Faiz Azmi</span>
-        <span class="text text-lg text-white text-500 text-center">Consult, Design, and Develop Websites</span>
-        <span class="text text-md text-center text-white">Have something great in mind? Feel free to contact me.</span>
-        <span class="text text-md text-center text-white">I'll help you to make it happen.</span>
-        <button class="btn btn-jumbotron mg-top-md">Let's Make Contact</button>
-      </div>
-    </div>
-  </div>
-  <div class="highlight">
-    <div class="highlight__header">
-      <span class="text text-xlg text-center">How Can I Help You?</span>
-      <span class="text text-md text-center">
-        Our work then targeted, best practices outcomes social innovation synergy. Venture philanthropy, revolutionary inclusive policymaker relief. User-centered program areas scale.
+      <span class="text text-md text-white">
+        I write articles related to web technologies, such as design trends, development tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get them all.
       </span>
+      <form class="newsletter__form">
+        <input class="newsletter__form__control" type="text" placeholder="Email address" />
+        <button class="btn btn-orange">Count me in!</button>
+      </form>
     </div>
-    <div class="highlight__content">
-      <div class="highlight__content__card">
-        <i class="highlight__content__card__icon fa fa-comments-o" aria-hidden="true"></i>
-        <span class="text text-lg">Consult</span>
-        <span class="text text-md">Co-create, design thinking; strengthen infrastructure resist granular. Revolution circular, movements or framework social impact low-hanging fruit. Save the world compelling revolutionary progress.</span>
-      </div>
-      <div class="highlight__content__card">
-        <i class="highlight__content__card__icon fa fa-paint-brush" aria-hidden="true"></i>
-        <span class="text text-lg">Design</span>
-        <span class="text text-md">Policymaker collaborates collective impact humanitarian shared value vocabulary inspire issue outcomes agile. Overcome injustice deep dive agile issue outcomes vibrant boots on the ground sustainable.</span>
-      </div>
-      <div class="highlight__content__card">
-        <i class="highlight__content__card__icon fa fa-linode" aria-hidden="true"></i>
-        <span class="text text-lg">Develop</span>
-        <span class="text text-md">Revolutionary circular, movements a or impact framework social impact low-hanging. Save the compelling revolutionary inspire progress. Collective impacts and challenges for opportunities of thought provoking.</span>
-      </div>
-      <div class="highlight__content__card">
-        <i class="highlight__content__card__icon fa fa-bullhorn" aria-hidden="true"></i>
-        <span class="text text-lg">Marketing</span>
-        <span class="text text-md">Peaceful; vibrant paradigm, collaborative cities. Shared vocabulary agile, replicable, effective altruism youth. Mobilize commitment to overcome injustice resilient, uplift social transparent effective.</span>
-      </div>
-      <div class="highlight__content__card">
-        <i class="highlight__content__card__icon fa fa-server" aria-hidden="true"></i>
-        <span class="text text-lg">Manage</span>
-        <span class="text text-md">Change-makers innovation or shared unit of analysis. Overcome injustice outcomes strategize vibrant boots on the ground sustainable. Optimism, effective altruism invest optimism corporate social.</span>
-      </div>
-      <div class="highlight__content__card">
-        <i class="highlight__content__card__icon fa fa-line-chart" aria-hidden="true"></i>
-        <span class="text text-lg">Evolve</span>
-        <span class="text text-md">Activate catalyze and impact contextualize humanitarian. Unit of analysis overcome injustice storytelling altruism. Thought leadership mass incarceration. Outcomes big data, fairness, social game-changer.</span>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <span class="text text-md text-center text-white">&copy; 2020 Faiz Azmi Rekatama. All rights reserved.</span>
-  </footer>
-  <div class="newsletter newsletter__hidden" id="newsletter">
-    <button id="newsletter__close" class="newsletter__close"><i class="fa fa-times" aria-hidden="true"></i></button>
-    <span class="text text-lg text-bold text-white">
-      Get latest updates in web technologies
-    </span>
-    <span class="text text-md text-white">
-      I write articles related to web technologies, such as design trends, development tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get them all.
-    </span>
-    <form class="newsletter__form">
-      <input class="newsletter__form__control" type="text" placeholder="Email address" />
-      <button class="btn btn-orange">Count me in!</button>
-    </form>
-  </div>
+  </main>
 </body>
 <script src="index.js"></script>
 </html>

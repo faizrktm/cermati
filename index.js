@@ -85,9 +85,16 @@ function initializeNewsletter(){
 
   const isStillClosed = getStorage('newsletter_closed', 10);
 
+  /**
+   * Show newsletter if arrived on 1/3 page,
+   * or at bottom of screen if the screen is large enough
+   * that almost consume all page
+   */
   const listener = function(){
-    if (document.body.scrollTop > minHeight || document.documentElement.scrollTop > minHeight) {
-      console.log(closed, isStillClosed);
+    if (
+      document.body.scrollTop > minHeight
+      || document.documentElement.scrollTop > minHeight
+      || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
       if(!closed && !isStillClosed){
         document.getElementById('newsletter').classList.remove('newsletter__hidden');
         document.getElementById('newsletter').classList.add('newsletter__shown');
